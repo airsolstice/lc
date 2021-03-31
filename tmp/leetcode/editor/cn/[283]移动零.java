@@ -20,17 +20,22 @@ class Solution {
     public void moveZeroes(int[] nums) {
         int p1 = 0, p2 = 0;
 
+        if(nums.length == 1){
+            return;
+        }
+
         while (p2 < nums.length) {
-            if(nums[p2] == 0){
-                p1 = p2;
-            } else {
+            if(nums[p2] != 0){
                 nums[p1] = nums[p2];
                 p1++;
             }
             p2 ++;
         }
 
-
+        while (p1 < nums.length) {
+            nums[p1] = 0;
+            p1 ++;
+        }
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
