@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="26aea11a-fb71-4b83-a206-3c6c242c8d4d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1qKFx7XXj8J6oCtFcc7dpPTg8Hf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="leetcode.id" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.example" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.lc65">
+    <configuration name="lc136" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.lc136" />
+      <module name="lc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lc189" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.lc189" />
+      <module name="lc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lc217" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.lc217" />
+      <module name="lc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lc350" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.lc350" />
+      <module name="lc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lc65" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.lc65" />
+      <module name="lc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.lc65" />
+        <item itemvalue="Application.lc350" />
+        <item itemvalue="Application.lc136" />
+        <item itemvalue="Application.lc217" />
+        <item itemvalue="Application.lc189" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26aea11a-fb71-4b83-a206-3c6c242c8d4d" name="Default Changelist" comment="" />
+      <created>1616820617209</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1616820617209</updated>
+      <workItem from="1616820621383" duration="1774000" />
+      <workItem from="1616988586885" duration="61000" />
+      <workItem from="1616988737637" duration="845000" />
+      <workItem from="1616989600901" duration="9362000" />
+      <workItem from="1617005300298" duration="8610000" />
+      <workItem from="1617092615773" duration="6263000" />
+      <workItem from="1617160770911" duration="3045000" />
+      <workItem from="1617165179490" duration="1825000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="472" height="466" key="DebuggerActiveHint" timestamp="1617164834280">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="472" height="466" key="DebuggerActiveHint/0.23.1680.1027@0.23.1680.1027" timestamp="1617164834280" />
+    <state width="1638" height="352" key="GridCell.Tab.0.bottom" timestamp="1617164896446">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="352" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1617164896446" />
+    <state width="1638" height="352" key="GridCell.Tab.0.center" timestamp="1617164896445">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="352" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1617164896445" />
+    <state width="1638" height="352" key="GridCell.Tab.0.left" timestamp="1617164896445">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="352" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1617164896445" />
+    <state width="1638" height="352" key="GridCell.Tab.0.right" timestamp="1617164896445">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="352" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1617164896445" />
+    <state width="1638" height="352" key="GridCell.Tab.1.bottom" timestamp="1617164896447">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="352" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1617164896447" />
+    <state width="1638" height="352" key="GridCell.Tab.1.center" timestamp="1617164896447">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="352" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1617164896447" />
+    <state width="1638" height="352" key="GridCell.Tab.1.left" timestamp="1617164896446">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="352" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1617164896446" />
+    <state width="1638" height="352" key="GridCell.Tab.1.right" timestamp="1617164896447">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="1638" height="352" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1617164896447" />
+    <state x="371" y="175" key="SettingsEditor" timestamp="1617166150226">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="371" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1617166150226" />
+    <state x="505" y="238" width="670" height="676" key="search.everywhere.popup" timestamp="1616989270162">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="238" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1616989270162" />
+  </component>
+</project>
