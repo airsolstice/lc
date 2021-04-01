@@ -7,18 +7,20 @@ class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        String[][] cube = new String[][]{
-                {"5","3",".",".","7",".",".",".","."},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {}
+        char[][] cube = new char[][]{
+                {'5','3','.','.','7','.','.','.','.'},
+                {'6','.','.','1','9','5','.','.','.'},
+                {'.','9','8','.','.','.','.','6','.'},
+                {'8','.','.','.','6','.','.','.','3'},
+                {'4','.','.','8','.','3','.','.','1'},
+                {'7','.','.','.','2','.','.','.','6'},
+                {'.','6','.','.','.','.','2','8','.'},
+                {'.','.','.','4','1','9','.','.','5'},
+                {'.','.','.','.','8','.','.','7','9'}
         };
 
+
+        System.out.println(solution.isValidSudoku(cube));
 
 //        solution.moveZeroes(new int[]{0,1,0,3,12});
 //        solution.moveZeroes(new int[]{1,0});
@@ -44,59 +46,22 @@ class Solution {
                     c.add(board[j][i]);
                 }
 
-                if(i< 6 && j < 6){
-                    if(!".".equals(board[j][i] + "") && m.contains(board[i][j])){
-                        return false;
-                    } else {
-                        m.add(board[i][j]);
+                if(i % 3 ==0 && j %3 == 0){
+                    for (int k = 0; k < 3; k++) {
+                        for (int l = 0; l < 3; l++) {
+                            if(!".".equals(board[i + k][j + l] + "") && m.contains(board[i + k][j + l])){
+                                return false;
+                            } else {
+                                m.add(board[i + k][j + l]);
+                            }
+                        }
                     }
-
-                    if(!".".equals(board[i+2][j] + "") && m.contains(board[i +1][j])){
-                        return false;
-                    } else {
-                        m.add(board[i+1][j]);
-                    }
-                    if(!".".equals(board[i+2][j] + "") && m.contains(board[i +2][j])){
-                        return false;
-                    } else {
-                        m.add(board[i+2][j]);
-                    }
-                    if(!".".equals(board[i][j+1] + "") && m.contains(board[i][j + 1])){
-                        return false;
-                    } else {
-                        m.add(board[i][j+1]);
-                    }
-                    if(!".".equals(board[i][j +2] + "") && m.contains(board[i][j + 2])){
-                        return false;
-                    } else {
-                        m.add(board[i][j+2]);
-                    }
-                    if(!".".equals(board[i+1][j +1] + "") && m.contains(board[i + 1][j + 1])){
-                        return false;
-                    } else {
-                        m.add(board[i+1][j+1]);
-                    }
-                    if(!".".equals(board[i+1][j +2] + "") && m.contains(board[i + 1][j + 2])){
-                        return false;
-                    } else {
-                        m.add(board[i+1][j+2]);
-                    }
-                    if(!".".equals(board[i+2][j +1] + "") && m.contains(board[i + 2][j + 1])){
-                        return false;
-                    } else {
-                        m.add(board[i+2][j+1]);
-                    }
-                    if(!".".equals(board[i+2][j +2] + "") && m.contains(board[i + 2][j + 2])){
-                        return false;
-                    } else {
-                        m.add(board[i+2][j+2]);
-                    }
+                    m.clear();
                 }
-
             }
         }
 
-        return false;
+        return true;
 
     }
 
