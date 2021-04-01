@@ -1,18 +1,106 @@
 package org.example;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 class Solution {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
+
+        String[][] cube = new String[][]{
+                {"5","3",".",".","7",".",".",".","."},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
+        };
+
+
 //        solution.moveZeroes(new int[]{0,1,0,3,12});
 //        solution.moveZeroes(new int[]{1,0});
-        System.out.println(Arrays.toString(solution.twoSum1(new int[]{1, 3, 4, 4}, 8)));
+//        System.out.println(Arrays.toString(solution.twoSum1(new int[]{1, 3, 4, 4}, 8)));
 //        System.out.println(solution.binarySearch(new int[]{1, 2, 7,11, 15}, 1, 0, 5));
     }
+
+    public boolean isValidSudoku(char[][] board) {
+        for (int i = 0; i < board.length; i++) {
+            Set<Character> r = new HashSet<>();
+            Set<Character> c = new HashSet<>();
+            Set<Character> m = new HashSet<>();
+            for (int j = 0; j < board[i].length; j++) {
+                if(!".".equals(board[i][j] + "") &&r.contains(board[i][j])){
+                    return false;
+                } else {
+                    r.add(board[i][j]);
+                }
+
+                if(!".".equals(board[j][i] + "") && c.contains(board[j][i])){
+                    return false;
+                } else {
+                    c.add(board[j][i]);
+                }
+
+                if(i< 6 && j < 6){
+                    if(!".".equals(board[j][i] + "") && m.contains(board[i][j])){
+                        return false;
+                    } else {
+                        m.add(board[i][j]);
+                    }
+
+                    if(!".".equals(board[i+2][j] + "") && m.contains(board[i +1][j])){
+                        return false;
+                    } else {
+                        m.add(board[i+1][j]);
+                    }
+                    if(!".".equals(board[i+2][j] + "") && m.contains(board[i +2][j])){
+                        return false;
+                    } else {
+                        m.add(board[i+2][j]);
+                    }
+                    if(!".".equals(board[i][j+1] + "") && m.contains(board[i][j + 1])){
+                        return false;
+                    } else {
+                        m.add(board[i][j+1]);
+                    }
+                    if(!".".equals(board[i][j +2] + "") && m.contains(board[i][j + 2])){
+                        return false;
+                    } else {
+                        m.add(board[i][j+2]);
+                    }
+                    if(!".".equals(board[i+1][j +1] + "") && m.contains(board[i + 1][j + 1])){
+                        return false;
+                    } else {
+                        m.add(board[i+1][j+1]);
+                    }
+                    if(!".".equals(board[i+1][j +2] + "") && m.contains(board[i + 1][j + 2])){
+                        return false;
+                    } else {
+                        m.add(board[i+1][j+2]);
+                    }
+                    if(!".".equals(board[i+2][j +1] + "") && m.contains(board[i + 2][j + 1])){
+                        return false;
+                    } else {
+                        m.add(board[i+2][j+1]);
+                    }
+                    if(!".".equals(board[i+2][j +2] + "") && m.contains(board[i + 2][j + 2])){
+                        return false;
+                    } else {
+                        m.add(board[i+2][j+2]);
+                    }
+                }
+
+            }
+        }
+
+        return false;
+
+    }
+
+
 
     public int[] twoSum1(int[] numbers, int target) {
         for (int i = 0; i < numbers.length; i++) {
@@ -61,7 +149,6 @@ class Solution {
 
         return new int[]{};
     }
-
 
     public void moveZeroes(int[] nums) {
         int p1 = 0, p2 = 0;
