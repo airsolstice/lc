@@ -7,8 +7,9 @@ class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        System.out.println(solution.firstUniqChar("loveleetcode"));
-
+        System.out.println(solution.isPalindrome("P0"));
+//        solution.isAnagram("car", "rac");
+//        System.out.println(solution.firstUniqChar("loveleetcode"));
 //        System.out.println(solution.reverse(-123));
 
 
@@ -38,13 +39,50 @@ class Solution {
 //        System.out.println(solution.binarySearch(new int[]{1, 2, 7,11, 15}, 1, 0, 5));
     }
 
+    public boolean isPalindrome(String s) {
+        int p1 = 0, p2 = 0;
+        char[] sa = s.toCharArray();
+
+        while (p2 < sa.length) {
+            if(sa[p2] >= 'A' && sa [p2]<= 'Z'){
+                sa[p1] = (char) (sa[p2] + 32);
+                p1++;
+            } else if(sa[p2] >= 'a' && sa [p2]<= 'z'){
+                sa[p1] = sa[p2];
+                p1++;
+            }
+            p2++;
+        }
+
+        if(p1 == 0){
+            return true;
+        }
+
+        for (int i = 0; i < p1; i++) {
+            if(sa[i] != sa[p1 - 1 -i]){
+                return false;
+            }
+        }
+
+        return true;
+    }
+
+    public boolean isAnagram(String s, String t) {
+        char[] sa = s.toCharArray();
+        char[] ta = t.toCharArray();
+
+        Arrays.sort(sa);
+        Arrays.sort(ta);
+        return String.valueOf(sa).equals(String.valueOf(ta));
+    }
+
     public int firstUniqChar(String s) {
 
         int p = 999;
         Map<Character, Integer> map = new HashMap<>();
         for (int i = 0; i < s.toCharArray().length; i++) {
             char c = s.charAt(i);
-            if(map.containsKey(c)){
+            if (map.containsKey(c)) {
                 map.put(c, -1);
             } else {
                 map.put(c, i);
@@ -52,8 +90,8 @@ class Solution {
         }
 
         for (Integer value : map.values()) {
-            if(value > -1){
-                p = p > value? value : p;
+            if (value > -1) {
+                p = p > value ? value : p;
             }
         }
 
@@ -66,8 +104,8 @@ class Solution {
         while (x != 0) {
             int pop = x % 10;
             x /= 10;
-            if (rev > Integer.MAX_VALUE/10 || (rev == Integer.MAX_VALUE / 10 && pop > 7)) return 0;
-            if (rev < Integer.MIN_VALUE/10 || (rev == Integer.MIN_VALUE / 10 && pop < -8)) return 0;
+            if (rev > Integer.MAX_VALUE / 10 || (rev == Integer.MAX_VALUE / 10 && pop > 7)) return 0;
+            if (rev < Integer.MIN_VALUE / 10 || (rev == Integer.MIN_VALUE / 10 && pop < -8)) return 0;
             System.out.println("rev: " + rev);
             System.out.println("pop: " + pop);
             System.out.println("x: " + x);
@@ -78,10 +116,10 @@ class Solution {
     }
 
     public void reverseString(char[] s) {
-        for (int i = 0; i < s.length/2; i++) {
+        for (int i = 0; i < s.length / 2; i++) {
             char t = s[i];
             s[i] = s[s.length - i - 1];
-            s[s.length -i - 1] = t;
+            s[s.length - i - 1] = t;
         }
     }
 

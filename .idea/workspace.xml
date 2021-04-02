@@ -2,28 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26aea11a-fb71-4b83-a206-3c6c242c8d4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/[387]字符串中的第一个唯一字符.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/[7]整数反转.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/all.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/doc/ha-xi-biao-by-jason-2-088e.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/doc/javaduo-chong-fang-shi-jie-jue-by-sdwwld-iojm.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/doc/p__O_log_x___.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/doc/p__log_{10}_x__.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/doc/p__temp_=_text{rev}_cdot_10_+_text{pop}_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/doc/p__text{pop}___7_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/doc/p__text{rev}_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/doc/p__text{rev}_==_frac{INTMAX}{10}_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/doc/p__text{rev}___frac{INTMAX}{10}_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/doc/p__text{rev}_geq_frac{INTMAX}{10}_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/doc/p__text{temp}_=_text{rev}_cdot_10_+_text{pop}_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/doc/python3-zi-dian-tong-ji-mei-ge-zi-mu-de-h9anz.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/doc/zheng-shu-fan-zhuan-by-leetcode.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/translation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/[125]验证回文串.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/[242]有效的字母异位词.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp/leetcode/editor/cn/[344]反转字符串.java" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/[344]反转字符串.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/example/AppTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp/leetcode/editor/cn/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/translation.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +158,7 @@
       <workItem from="1617092615773" duration="6263000" />
       <workItem from="1617160770911" duration="3045000" />
       <workItem from="1617165179490" duration="30008000" />
-      <workItem from="1617287354140" duration="1090000" />
+      <workItem from="1617287354140" duration="6043000" />
     </task>
     <servers />
   </component>
@@ -181,50 +169,50 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="480" height="477" key="DebuggerActiveHint" timestamp="1617270247532">
+    <state width="480" height="477" key="DebuggerActiveHint" timestamp="1617349648570">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="480" height="477" key="DebuggerActiveHint/0.0.1680.1050@0.0.1680.1050" timestamp="1617270247532" />
+    <state width="480" height="477" key="DebuggerActiveHint/0.0.1680.1050@0.0.1680.1050" timestamp="1617349648570" />
     <state width="472" height="466" key="DebuggerActiveHint/0.23.1680.1027@0.23.1680.1027" timestamp="1617164834280" />
-    <state width="818" height="284" key="GridCell.Tab.0.bottom" timestamp="1617286270158">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="818" height="276" key="GridCell.Tab.0.bottom" timestamp="1617350238156">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="818" height="284" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1617283034737" />
+    <state width="818" height="276" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1617350238156" />
     <state width="818" height="284" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270158" />
-    <state width="818" height="284" key="GridCell.Tab.0.center" timestamp="1617286270157">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="818" height="276" key="GridCell.Tab.0.center" timestamp="1617350238154">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="818" height="284" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1617283034736" />
+    <state width="818" height="276" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1617350238154" />
     <state width="818" height="284" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270157" />
-    <state width="818" height="284" key="GridCell.Tab.0.left" timestamp="1617286270157">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="818" height="276" key="GridCell.Tab.0.left" timestamp="1617350238154">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="818" height="284" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1617283034735" />
+    <state width="818" height="276" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1617350238154" />
     <state width="818" height="284" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270157" />
-    <state width="818" height="284" key="GridCell.Tab.0.right" timestamp="1617286270158">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="818" height="276" key="GridCell.Tab.0.right" timestamp="1617350238156">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="818" height="284" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1617283034736" />
+    <state width="818" height="276" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1617350238156" />
     <state width="818" height="284" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270158" />
-    <state width="818" height="276" key="GridCell.Tab.1.bottom" timestamp="1617286270150">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="818" height="276" key="GridCell.Tab.1.bottom" timestamp="1617350238159">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="818" height="276" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1617273067614" />
+    <state width="818" height="276" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1617350238159" />
     <state width="818" height="276" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270150" />
-    <state width="818" height="276" key="GridCell.Tab.1.center" timestamp="1617286270149">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="818" height="276" key="GridCell.Tab.1.center" timestamp="1617350238158">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="818" height="276" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1617273067612" />
+    <state width="818" height="276" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1617350238158" />
     <state width="818" height="276" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270149" />
-    <state width="818" height="276" key="GridCell.Tab.1.left" timestamp="1617286270149">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="818" height="276" key="GridCell.Tab.1.left" timestamp="1617350238157">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="818" height="276" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1617273067612" />
+    <state width="818" height="276" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1617350238157" />
     <state width="818" height="276" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270149" />
-    <state width="818" height="276" key="GridCell.Tab.1.right" timestamp="1617286270149">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state width="818" height="276" key="GridCell.Tab.1.right" timestamp="1617350238158">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="818" height="276" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1617273067613" />
+    <state width="818" height="276" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1617350238158" />
     <state width="818" height="276" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270149" />
     <state x="371" y="175" key="SettingsEditor" timestamp="1617166150226">
       <screen x="0" y="23" width="1680" height="1027" />
