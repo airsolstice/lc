@@ -7,6 +7,11 @@ class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
+        System.out.println(solution.firstUniqChar("loveleetcode"));
+
+//        System.out.println(solution.reverse(-123));
+
+
         char[][] cube = new char[][]{
                 {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
                 {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
@@ -25,18 +30,59 @@ class Solution {
                 {9, 10, 11, 12},
                 {13, 14, 15, 16}
         };
-        solution.rotate(martix);
-        for (int i = 0; i < martix.length; i++) {
-            for (int i1 = 0; i1 < martix[i].length; i1++) {
-                System.out.print(martix[i][i1] + ",");
-            }
-            System.out.println();
-        }
+//        solution.rotate(martix);
 //        System.out.println(solution.isValidSudoku(cube));
 //        solution.moveZeroes(new int[]{0,1,0,3,12});
 //        solution.moveZeroes(new int[]{1,0});
 //        System.out.println(Arrays.toString(solution.twoSum1(new int[]{1, 3, 4, 4}, 8)));
 //        System.out.println(solution.binarySearch(new int[]{1, 2, 7,11, 15}, 1, 0, 5));
+    }
+
+    public int firstUniqChar(String s) {
+
+        int p = 999;
+        Map<Character, Integer> map = new HashMap<>();
+        for (int i = 0; i < s.toCharArray().length; i++) {
+            char c = s.charAt(i);
+            if(map.containsKey(c)){
+                map.put(c, -1);
+            } else {
+                map.put(c, i);
+            }
+        }
+
+        for (Integer value : map.values()) {
+            if(value > -1){
+                p = p > value? value : p;
+            }
+        }
+
+        return p == 999 ? -1 : p;
+    }
+
+
+    public int reverse(int x) {
+        int rev = 0;
+        while (x != 0) {
+            int pop = x % 10;
+            x /= 10;
+            if (rev > Integer.MAX_VALUE/10 || (rev == Integer.MAX_VALUE / 10 && pop > 7)) return 0;
+            if (rev < Integer.MIN_VALUE/10 || (rev == Integer.MIN_VALUE / 10 && pop < -8)) return 0;
+            System.out.println("rev: " + rev);
+            System.out.println("pop: " + pop);
+            System.out.println("x: " + x);
+
+            rev = rev * 10 + pop;
+        }
+        return rev;
+    }
+
+    public void reverseString(char[] s) {
+        for (int i = 0; i < s.length/2; i++) {
+            char t = s[i];
+            s[i] = s[s.length - i - 1];
+            s[s.length -i - 1] = t;
+        }
     }
 
 
