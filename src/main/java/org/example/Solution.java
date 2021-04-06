@@ -6,37 +6,196 @@ class Solution {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
+//        System.out.println(solution.strStr("mississippi", "issip"));
+        ListNode n5 = new ListNode(5);
+        ListNode n4 = new ListNode(4, n5);
+        ListNode n3 = new ListNode(3, n4);
+        ListNode n2 = new ListNode(2, n3);
+        ListNode head = new ListNode(1, n2);
+        head = solution.reverseList(head);
+        System.out.println();
 
-        System.out.println(solution.isPalindrome("P0"));
-//        solution.isAnagram("car", "rac");
-//        System.out.println(solution.firstUniqChar("loveleetcode"));
-//        System.out.println(solution.reverse(-123));
+    }
+
+    public ListNode reverseList(ListNode head) {
+        if(head.next == null){
+            return head;
+        }
+
+        ListNode n = reverseList(head.next);
+        System.out.println(n.val);
+        head.next = null;
+        n.next = head;
+        
+        return n.next;
+    }
+
+    public static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
+
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        ListNode p1, p2, p3;
+        p1 = head;
+        p2 = head;
+        p3 = null;
+
+        for (int i = 0; i < n - 1; i++) {
+            if(p2 == null){
+                return null;
+            }
+            p2 = p2.next;
+        }
+
+        while (p2.next != null) {
+            p2 = p2.next;
+            p3 = p1;
+            p1 = p1.next;
+        }
 
 
-        char[][] cube = new char[][]{
-                {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
-                {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
-                {'.', '9', '8', '.', '.', '.', '.', '6', '.'},
-                {'8', '.', '.', '.', '6', '.', '.', '.', '3'},
-                {'4', '.', '.', '8', '.', '3', '.', '.', '1'},
-                {'7', '.', '.', '.', '2', '.', '.', '.', '6'},
-                {'.', '6', '.', '.', '.', '.', '2', '8', '.'},
-                {'.', '.', '.', '4', '1', '9', '.', '.', '5'},
-                {'.', '.', '.', '.', '8', '.', '.', '7', '9'}
-        };
+        if(p1.next == null){
+            if(p3 != null){
+                p3.next = null;
+                return head;
+            } else {
+                return null;
+            }
+        }
 
-        int[][] martix = new int[][]{
-                {1, 2, 3, 4},
-                {5, 6, 7, 8},
-                {9, 10, 11, 12},
-                {13, 14, 15, 16}
-        };
-//        solution.rotate(martix);
-//        System.out.println(solution.isValidSudoku(cube));
-//        solution.moveZeroes(new int[]{0,1,0,3,12});
-//        solution.moveZeroes(new int[]{1,0});
-//        System.out.println(Arrays.toString(solution.twoSum1(new int[]{1, 3, 4, 4}, 8)));
-//        System.out.println(solution.binarySearch(new int[]{1, 2, 7,11, 15}, 1, 0, 5));
+        p1.val = p1.next.val;
+        p1.next = p1.next.next;
+
+        return head;
+    }
+
+    public String longestCommonPrefix(String[] strs) {
+        int p = 0;
+
+        if (strs.length == 0 || strs[0].length() == 0) {
+            return "";
+        }
+
+        char[] first = strs[0].toCharArray();
+
+        for (int i = 0; i < first.length; i++) {
+            char v = first[p];
+            for (int j = 0; j < strs.length; j++) {
+                if (p >= strs[j].length()) {
+                    return strs[j];
+                }
+
+                if (strs[j].charAt(p) != v) {
+                    return strs[j].substring(0, p);
+                }
+            }
+            p++;
+        }
+
+
+        return strs[0];
+
+    }
+
+    public String countAndSay(int n) {
+
+        int i = 1;
+        String res = "1";
+        String tmp = "";
+        while (i++ < n) {
+            char[] arr = res.toCharArray();
+            res = "";
+            int p1 = 0, p2 = 0;
+
+            while (p2 <= arr.length) {
+                if (p2 == arr.length) {
+                    res += (p2 - p1) + "" + arr[p1];
+                    break;
+                }
+                if (arr[p1] != arr[p2]) {
+                    int len = p2 - p1;
+                    res += len + "" + arr[p1];
+                    p1 = p2;
+                }
+                p2++;
+            }
+            System.out.println(res);
+
+        }
+
+
+        return res;
+    }
+
+    public int strStr(String haystack, String needle) {
+
+        if (needle.equals("") && haystack.equals("")) {
+            return -1;
+        }
+
+
+        if (haystack.equals("")) {
+            return -1;
+        }
+
+        if (haystack.equals(needle)) {
+            return 0;
+        }
+
+        int p1 = 0, p2 = 0, p3 = 0;
+        char[] ha = haystack.toCharArray();
+        char[] na = needle.toCharArray();
+        while (p2 < haystack.length()) {
+            if (p3 == na.length - 1) {
+                break;
+            }
+            if (ha[p2] == na[p3]) {
+                p1 = p2;
+                p3++;
+
+            } else {
+                p3 = 0;
+                p2 = p1;
+            }
+            p2++;
+
+        }
+
+        return p3 == na.length ? p1 - na.length + 1 : -1;
+    }
+
+    public int myAtoi(String s) {
+        s = s.trim();
+        if (s.length() == 0) {
+            return 0;
+        }
+
+        int sign = s.startsWith("-") ? -1 : 1;
+
+        char[] sa = s.toCharArray();
+        Long res = 0L;
+        for (int i = sign == 1 ? 0 : 1; i < sa.length; i++) {
+            int digit = sa[i] - '0';
+            if (digit < 0 || digit > 9) {
+                break;
+            }
+
+            if (res > Integer.MAX_VALUE / 10 || (res == Integer.MAX_VALUE / 10 && digit > Integer.MAX_VALUE % 10))
+                return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
+            res = res * 10 + digit;
+        }
+
+        return sign * res.intValue();
     }
 
     public boolean isPalindrome(String s) {
@@ -44,22 +203,22 @@ class Solution {
         char[] sa = s.toCharArray();
 
         while (p2 < sa.length) {
-            if(sa[p2] >= 'A' && sa [p2]<= 'Z'){
+            if (sa[p2] >= 'A' && sa[p2] <= 'Z') {
                 sa[p1] = (char) (sa[p2] + 32);
                 p1++;
-            } else if(sa[p2] >= 'a' && sa [p2]<= 'z'){
+            } else if (sa[p2] >= 'a' && sa[p2] <= 'z') {
                 sa[p1] = sa[p2];
                 p1++;
             }
             p2++;
         }
 
-        if(p1 == 0){
+        if (p1 == 0) {
             return true;
         }
 
         for (int i = 0; i < p1; i++) {
-            if(sa[i] != sa[p1 - 1 -i]){
+            if (sa[i] != sa[p1 - 1 - i]) {
                 return false;
             }
         }
