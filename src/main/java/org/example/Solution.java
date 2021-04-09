@@ -12,10 +12,36 @@ class Solution {
         ListNode n3 = new ListNode(3, n4);
         ListNode n2 = new ListNode(2, n3);
         ListNode head = new ListNode(1, n2);
-        head = solution.reverseList(head);
-        System.out.println();
+//        head = solution.reverseList(head);
+//        System.out.println();
+        System.out.println(solution.inBag(new int[]{2, 4, 3, 7}, new int[]{2, 9, 8, 7}, 10));
+
 
     }
+
+    public int inBag(int[] w, int v[], int c){
+        int len = w.length -1;
+        return ks(w, v,len, c);
+    }
+
+    private int ks(int[] w, int[] v, int i, int c){
+        int res = 0;
+        if(i == -1 || c == 0){
+            return 0;
+        } else if (w[i] > c){
+            System.out.println("=====");
+           res = ks(w, v, i -1, c);
+        } else {
+
+            int t1 = ks(w, v, i -1, c);
+            int t2 = ks(w, v, i -1, c - w[i]) + v[i];
+            res += Math.max(t1, t2);
+            System.out.println(i+ "，" + c + "，" + res);
+        }
+
+        return res;
+    }
+
 
     public ListNode reverseList(ListNode head) {
         if(head.next == null){

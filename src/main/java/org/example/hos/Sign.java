@@ -3,7 +3,7 @@ package org.example.hos;
 public class Sign {
 
     public static void main(String[] args) {
-        System.out.println(getPublicKeySignature("Ax12345678"));
+        System.out.println(getPublicKeySignature("a123456"));
     }
 
     public static String getPublicKeySignature(String var0) {
