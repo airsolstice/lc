@@ -7,16 +7,98 @@ class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
 //        System.out.println(solution.strStr("mississippi", "issip"));
-        ListNode n5 = new ListNode(5);
-        ListNode n4 = new ListNode(4, n5);
-        ListNode n3 = new ListNode(3, n4);
-        ListNode n2 = new ListNode(2, n3);
-        ListNode head = new ListNode(1, n2);
-//        head = solution.reverseList(head);
-//        System.out.println();
-        System.out.println(solution.inBag(new int[]{2, 4, 3, 7}, new int[]{2, 9, 8, 7}, 10));
+        System.out.println(solution.generate(5));
+    }
 
 
+    public List<List<Integer>> generate(int numRows) {
+
+        Integer[][] dp = new Integer[numRows][numRows];
+        for (int i = 0; i < numRows; i++) {
+            for (int j = 0; j < numRows; j++) {
+                if(i < j){
+                    continue;
+                }
+
+                if(j == 0 || i == j){
+                    dp[i][j] = 1;
+                    continue;
+                }
+
+                dp[i][j] = dp[i -1][j -1] + dp[i - 1][j];
+
+            }
+        }
+
+        List<List<Integer>> res = new ArrayList<>();
+        for (int i = 0; i < numRows; i++) {
+            res.add(Arrays.asList(dp[i]));
+        }
+
+        return res;
+    }
+
+
+    public int maxSubArray(int[] nums) {
+
+        if(nums.length == 0){
+            return 0;
+        }
+
+        if(nums.length == 1){
+            return nums[0];
+        }
+
+        int[][] dp = new int[nums.length][nums.length];
+
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < nums.length; i++) {
+            dp[i][i] = nums[i];
+            max = Math.max(nums[i], max);
+        }
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums.length; j++) {
+
+                if(i <= j){
+                    continue;
+                }
+
+                int v = dp[j][i - 1] + nums[i];
+                dp[j][i] = v;
+                max = Math.max(max, v);
+            }
+        }
+
+        return max;
+    }
+
+    public String longestPalindrome(String s) {
+        char[] arr = s.toCharArray();
+        boolean[][] dp = new boolean[s.length()][s.length()];
+
+        for (int i = 0; i < arr.length; i++) {
+            dp[i][i] = true;
+        }
+
+        int mi = 0;
+        int mj = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                if(j >= i || j + 1 == arr.length){
+                    continue;
+                }
+
+                dp[j][i] = arr[i] == arr[j] && (i -j == 1 || dp[j + 1][i -1]);
+                if(dp[j][i] && i -j > mi - mj){
+                    mi = i;
+                    mj = j;
+                }
+            }
+        }
+
+
+
+        return s.substring(mj, mi +1);
     }
 
     public int inBag(int[] w, int v[], int c){

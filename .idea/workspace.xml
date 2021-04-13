@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26aea11a-fb71-4b83-a206-3c6c242c8d4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/[72]编辑距离.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/[118]杨辉三角.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/[53]最大子序和.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/[5]最长回文子串.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/hos/Sign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/hos/Sign.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/Solution$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Solution$ListNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/org/example/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Solution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/all.json" afterDir="false" />
@@ -63,7 +64,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Sign">
+  <component name="RunManager" selected="Application.Solution">
     <configuration name="Sign" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.hos.Sign" />
       <module name="lc" />
@@ -131,8 +132,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Sign" />
         <item itemvalue="Application.Solution" />
+        <item itemvalue="Application.Sign" />
         <item itemvalue="Application.lc65" />
         <item itemvalue="Application.lc350" />
         <item itemvalue="Application.lc136" />
@@ -164,7 +165,9 @@
       <workItem from="1617776442231" duration="32000" />
       <workItem from="1617777190195" duration="3548000" />
       <workItem from="1617790990201" duration="1090000" />
-      <workItem from="1617850221383" duration="1816000" />
+      <workItem from="1617850221383" duration="8667000" />
+      <workItem from="1618043034398" duration="196000" />
+      <workItem from="1618215204951" duration="6333000" />
     </task>
     <servers />
   </component>
@@ -175,51 +178,51 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="480" height="477" key="DebuggerActiveHint" timestamp="1617704342679">
+    <state width="480" height="477" key="DebuggerActiveHint" timestamp="1618223388519">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="480" height="477" key="DebuggerActiveHint/0.0.1680.1050@0.0.1680.1050" timestamp="1617704342679" />
-    <state width="472" height="466" key="DebuggerActiveHint/0.23.1680.1027@0.23.1680.1027" timestamp="1617164834280" />
-    <state width="1636" height="336" key="GridCell.Tab.0.bottom" timestamp="1617790970440">
+    <state width="480" height="477" key="DebuggerActiveHint/0.0.1680.1050@0.0.1680.1050" timestamp="1618223388519" />
+    <state width="472" height="466" key="DebuggerActiveHint/0.23.1680.1027@0.23.1680.1027" timestamp="1617964410603" />
+    <state width="818" height="350" key="GridCell.Tab.0.bottom" timestamp="1618230862848">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1636" height="336" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1617790970440" />
-    <state width="818" height="284" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270158" />
-    <state width="1636" height="336" key="GridCell.Tab.0.center" timestamp="1617790970439">
+    <state width="818" height="350" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1618230862848" />
+    <state width="1636" height="319" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1617973396946" />
+    <state width="818" height="350" key="GridCell.Tab.0.center" timestamp="1618230862847">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1636" height="336" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1617790970439" />
-    <state width="818" height="284" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270157" />
-    <state width="1636" height="336" key="GridCell.Tab.0.left" timestamp="1617790970438">
+    <state width="818" height="350" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1618230862847" />
+    <state width="1636" height="319" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1617973396944" />
+    <state width="818" height="350" key="GridCell.Tab.0.left" timestamp="1618230862846">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1636" height="336" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1617790970438" />
-    <state width="818" height="284" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270157" />
-    <state width="1636" height="336" key="GridCell.Tab.0.right" timestamp="1617790970440">
+    <state width="818" height="350" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1618230862846" />
+    <state width="1636" height="319" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1617973396944" />
+    <state width="818" height="350" key="GridCell.Tab.0.right" timestamp="1618230862847">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1636" height="336" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1617790970440" />
-    <state width="818" height="284" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270158" />
-    <state width="1636" height="336" key="GridCell.Tab.1.bottom" timestamp="1617790970443">
+    <state width="818" height="350" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1618230862847" />
+    <state width="1636" height="319" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1617973396945" />
+    <state width="818" height="350" key="GridCell.Tab.1.bottom" timestamp="1618230862851">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1636" height="336" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1617790970443" />
-    <state width="818" height="276" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270150" />
-    <state width="1636" height="336" key="GridCell.Tab.1.center" timestamp="1617790970442">
+    <state width="818" height="350" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1618230862851" />
+    <state width="1636" height="319" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1617973396947" />
+    <state width="818" height="350" key="GridCell.Tab.1.center" timestamp="1618230862849">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1636" height="336" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1617790970442" />
-    <state width="818" height="276" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270149" />
-    <state width="1636" height="336" key="GridCell.Tab.1.left" timestamp="1617790970441">
+    <state width="818" height="350" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1618230862849" />
+    <state width="1636" height="319" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1617973396946" />
+    <state width="818" height="350" key="GridCell.Tab.1.left" timestamp="1618230862848">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1636" height="336" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1617790970441" />
-    <state width="818" height="276" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270149" />
-    <state width="1636" height="336" key="GridCell.Tab.1.right" timestamp="1617790970442">
+    <state width="818" height="350" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1618230862848" />
+    <state width="1636" height="319" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1617973396946" />
+    <state width="818" height="350" key="GridCell.Tab.1.right" timestamp="1618230862851">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1636" height="336" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1617790970442" />
-    <state width="818" height="276" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1617286270149" />
+    <state width="818" height="350" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1618230862851" />
+    <state width="1636" height="319" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1617973396947" />
     <state x="378" y="187" key="Maven.ArtifactSearchDialog" timestamp="1617365190645">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -247,40 +250,55 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>203</line>
+          <line>285</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>184</line>
+          <line>266</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>141</line>
+          <line>223</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>104</line>
+          <line>186</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>97</line>
+          <line>179</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>93</line>
+          <line>175</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>55</line>
+          <line>137</line>
           <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/lc$Solution.ic" NAME="Solution Coverage Results" MODIFIED="1617964295504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.hos.*</FILTER>
+    </SUITE>
   </component>
 </project>
