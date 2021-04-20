@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26aea11a-fb71-4b83-a206-3c6c242c8d4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/[118]杨辉三角.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/[53]最大子序和.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/[5]最长回文子串.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/[119]杨辉三角 II.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/[64]最小路径和.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Solution$ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Solution$ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Solution.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/all.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp/leetcode/editor/cn/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/tmp/leetcode/editor/cn/translation.json" afterDir="false" />
     </list>
@@ -168,6 +165,10 @@
       <workItem from="1617850221383" duration="8667000" />
       <workItem from="1618043034398" duration="196000" />
       <workItem from="1618215204951" duration="6333000" />
+      <workItem from="1618285652406" duration="499000" />
+      <workItem from="1618286312268" duration="2240000" />
+      <workItem from="1618387177749" duration="173000" />
+      <workItem from="1618582249454" duration="612000" />
     </task>
     <servers />
   </component>
@@ -250,47 +251,47 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>285</line>
+          <line>307</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>266</line>
+          <line>288</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>223</line>
+          <line>245</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>186</line>
+          <line>208</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>179</line>
+          <line>201</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>175</line>
+          <line>197</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>137</line>
+          <line>159</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>37</line>
+          <line>59</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/Solution.java</url>
-          <line>27</line>
+          <line>49</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>

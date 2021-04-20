@@ -10,6 +10,28 @@ class Solution {
         System.out.println(solution.generate(5));
     }
 
+    public int minPathSum(int[][] grid) {
+
+        if(grid.length == 0){
+            return 0;
+        }
+
+        int r = grid.length;
+        int c = grid[0].length;
+        int[][] dp = new int[r+1][c+1];
+
+        for (int i = 0; i < r + 1; i++) {
+
+        }
+
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+            }
+        }
+
+
+        return 0;
+    }
 
     public List<List<Integer>> generate(int numRows) {
 
